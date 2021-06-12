@@ -20,10 +20,10 @@ app.get("/about",(req,res)=>{
     res.send("Hello from about express server")
 }) 
 
-if(process.env.NODE_ENV=="production")
-{
-    app.use(express.static("client/build"))
-}
+// if(process.env.NODE_ENV=="production")
+// {
+//     app.use(express.static("client/build"))
+// }
 
 app.listen(port,()=>{
     console.log(`Express Server is Running on Port ${port}`)

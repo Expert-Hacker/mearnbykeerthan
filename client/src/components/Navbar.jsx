@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../images/logo_bg.png'
 import {Link} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../App.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 function Navbar() {
@@ -18,17 +19,17 @@ function Navbar() {
       <ul className="navbar-nav m-auto">
         <li class="nav-item px-3">
           {/* <a class="nav-link active" aria-current="page" href="/">Home</a> */}
-          <Link to="/" className="nav-link" aria-current="page">Home</Link>
+          <NavLink exact to="/" className="nav-link" aria-current="page">Home</NavLink>
         </li>
         <li class="nav-item px-3 " >
           {/* <a class="nav-link" href="/about">About</a> */}
-          <Link to="/about" className="nav-link">About</Link>
+          <NavLink exact  to="/about" className="nav-link">About</NavLink>
         </li>
         <li class="nav-item px-3">
-        <Link to="/contactus" className="nav-link">Contact</Link>
+        <NavLink exact to="/contactus" className="nav-link">Contact</NavLink>
         </li>
         <li class="nav-item px-3">
-        <Link to="/tryfree" className="nav-link">Try Free</Link>
+        <NavLink exact to="/tryfree" className="nav-link">Try Free</NavLink>
         </li>
       </ul>
       <ul className="navbar-nav ml-auto">
